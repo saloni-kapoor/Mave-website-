@@ -910,7 +910,6 @@ function App() {
                 <p>Your data privacy information will go here.</p>
               </div>
             </div>
-
             <div className="faq-card">
               <button className="faq-question">
                 Do I get session pads?
@@ -920,7 +919,6 @@ function App() {
                 <p>Your session pads information will go here.</p>
               </div>
             </div>
-
             <div className="faq-card">
               <button className="faq-question">
                 Is Mave suitable for everyone?
@@ -930,14 +928,9 @@ function App() {
                 <p>Your suitability information will go here.</p>
               </div>
             </div>
-
           </div>
         </div>
       </section>
-
-
-
-
     </>
   );
 }
