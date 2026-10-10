@@ -138,21 +138,21 @@ function ExpertsSection() {
 
   const experts = [
     {
-      image: "/images/e1.jpg",
+      image: `${import.meta.env.BASE_URL}images/e1.jpg`,
       quote:
         "Mave has brought together evidence-based science and functional design to make a truly effective tool.",
       name: "Dr. Himanshu Nirvan",
       role: "MD, Psychiatrist & Gold Medalist",
     },
     {
-      image: "/images/e2.jpg",
+      image: `${import.meta.env.BASE_URL}images/e2.jpg`,
       quote:
         "Mave’s headset does what’s long overdue: making neurotechnology accessible and effortless for everyday life.",
       name: "Nicole O’Connor, MA, MFT",
       role: "Former Chief of Staff, Headspace",
     },
     {
-      image: "/images/e3.jpg",
+      image: `${import.meta.env.BASE_URL}images/e3.jpg`,
       quote:
         "It’s like a model t car vs a 2025 Mercedes. Mave’s product is the Mercedes!",
       name: "Steev Hodgson",
@@ -272,38 +272,38 @@ function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const testimonials = [
     {
-      image: "/images/u4.jpg",
+      image: `${import.meta.env.BASE_URL}images/u4.jpg`,
       review: "More energy and focus than caffeine, without the jitters. It’s worth the appreciation.",
       name: "Michael Raspuzzi",
       role: "Founder US",
     },
     {
-      image: "/images/u2.jpg",
+      image: `${import.meta.env.BASE_URL}images/u2.jpg`,
       review: "My frequency of anxious thoughts reduced drastically, like someone pressed a reset button.",
       name: "Vardhman Jain",
       role: "Founder IN",
       video: true,
     },
     {
-      image: "/images/u3.jpg",
+      image: `${import.meta.env.BASE_URL}images/u3.jpg`,
       review: "I stay calmer under stress and react effectively, my mental stamina and HRV have also improved.",
       name: "Forest Welch",
       role: "Software Engineer US",
     },
     {
-      image: "/images/u5.jpg",
+      image: `${import.meta.env.BASE_URL}images/u5.jpg`,
       review: "More energy and focus throughout the day.",
       name: "Customer Four",
       role: "Founder US",
     },
     {
-      image: "/images/u6.jpg",
+      image: `${import.meta.env.BASE_URL}images/u6.jpg`,
       review: "I feel calmer and more focused in my daily life.",
       name: "Customer Five",
       role: "Founder IN",
     },
     {
-      image: "/images/u3.jpg",
+      image: `${import.meta.env.BASE_URL}images/u3.jpg`,
       review: "My stress feels easier to manage.",
       name: "Customer Six",
       role: "Software Engineer US",
@@ -356,16 +356,19 @@ function App() {
               Max ‘Pain’ Griffin, UFC Fighter
             </p>
             <div className="profile-images">
-              <img src="/images/p1.jpg" alt="Customer 1" />
-              <img src="/images/p2.jpg" alt="Customer 2" />
-              <img src="/images/p3.jpg" alt="Customer 3" />
-              <img src="/images/p4.jpg" alt="Customer 4" />
-              <img src="/images/p5.jpg" alt="Customer 5" />
+              <img src={`${import.meta.env.BASE_URL}images/p1.jpg`} alt="Customer 1" />
+              <img src={`${import.meta.env.BASE_URL}images/p2.jpg`} alt="Customer 2" />
+              <img src={`${import.meta.env.BASE_URL}images/p3.jpg`} alt="Customer 3" />
+              <img src={`${import.meta.env.BASE_URL}images/p4.jpg`} alt="Customer 4" />
+              <img src={`${import.meta.env.BASE_URL}images/p5.jpg`} alt="Customer 5" />
             </div>
           </div>
         </div>
         <div className="hero-image">
-          <img src="/images/hero.jpg" alt="Mave wellness" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/hero.jpg`}
+            alt="Mave wellness"
+          />
           <span className="rating">★★★★★</span>
         </div>
       </section>
@@ -467,7 +470,7 @@ function App() {
         <h1>Introducing Mave</h1>
         <div className="product-area">
           <img
-            src="/images/move-bend.png"
+            src={`${import.meta.env.BASE_URL}images/move-bend.png`}
             alt="Mave Product"
             className="product-image"
           />
