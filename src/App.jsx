@@ -201,6 +201,7 @@ function ExpertsSection() {
 }
 
 function App() {
+  const [openFaq, setOpenFaq] = useState(null);
 
   const resultsRef = useRef(null);
   const [showResults, setShowResults] = useState(false);
