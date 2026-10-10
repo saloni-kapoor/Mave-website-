@@ -1186,8 +1186,6 @@ body {
   font-size: 16px;
   cursor: default;
 }
-```css
-/* FAQ Section */
 .faq-section {
   width: 100%;
   padding: 80px 0;
@@ -1225,7 +1223,6 @@ body {
   text-decoration: underline;
 }
 
-/* Right Side: Two Columns */
 .faq-right {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
