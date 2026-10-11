@@ -135,7 +135,6 @@ function ExpertsSection() {
     const timer = setInterval(() => {
       setActive((previous) => (previous + 1) % experts.length);
     }, 4000);
-
     return () => clearInterval(timer);
   }, []);
   return (
