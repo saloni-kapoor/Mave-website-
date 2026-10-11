@@ -1,60 +1,48 @@
 import { useState, useEffect, useRef } from "react";
 import "../App.css";
-
 function CompanionApp() {
   const phoneImages = [
     "/images/ph1.png",
     "/images/ph2.png",
     "/images/ph3.png",
   ];
-
   const [currentImage, setCurrentImage] = useState(0);
-
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImage(
         (previous) => (previous + 1) % phoneImages.length
       );
     }, 3000);
-
     return () => clearInterval(timer);
   }, []);
-
   return (
     <section className="companion-section">
       <div className="companion-container">
         <div className="companion-left">
           <p className="companion-label">COMPANION APP</p>
-
           <h2>
             Unlock more
             <br />
             with the Mave app
           </h2>
-
           <p className="free-access">
             ❧ Lifetime free access ❧
           </p>
-
           <div className="feature-cards">
             <div className="feature-card">
               Track<br />Progress
             </div>
-
             <div className="feature-card">
               Manage<br />Sessions
             </div>
-
             <div className="feature-card">
               Health<br />Sync
             </div>
           </div>
-
           <div className="compatibility">
             Compatible with  iOS and ▶ Android.
           </div>
         </div>
-
         <div className="companion-right">
           <img
             key={currentImage}
@@ -67,27 +55,21 @@ function CompanionApp() {
     </section>
   );
 }
-
 function HowItWorks() {
   const [progress, setProgress] = useState(0);
-
   useEffect(() => {
     function handleScroll() {
       let scroll = window.scrollY;
       let height = document.body.scrollHeight - window.innerHeight;
-
       if (height > 0) {
         setProgress((scroll / height) * 100);
       }
     }
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   return (
     <section className="how-it-works">
       <h2>How it works</h2>
