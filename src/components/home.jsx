@@ -135,6 +135,7 @@ function ExpertsSection() {
     const timer = setInterval(() => {
       setActive((previous) => (previous + 1) % experts.length);
     }, 4000);
+
     return () => clearInterval(timer);
   }, []);
   return (
@@ -474,6 +475,7 @@ function App() {
               src="/images/b2.png"
               alt="Woman wearing Mave headset"
             />
+
             <div className="photo-labels">
               <span>Ergonomic design</span>
               <span>Adjustable strap</span>
