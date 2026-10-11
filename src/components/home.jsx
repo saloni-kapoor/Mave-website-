@@ -131,8 +131,7 @@ function ExpertsSection() {
       role: "Certified ADHD Coach",
     },
   ];
-
-   useEffect(() => {
+  useEffect(() => {
     const timer = setInterval(() => {
       setActive((previous) => (previous + 1) % experts.length);
     }, 4000);
