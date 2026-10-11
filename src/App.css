@@ -438,12 +438,6 @@ body {
   height: 100%;
 }
 
-@media (max-width: 600px) {
-  .mave-viewer {
-    height: 320px;
-  }
-}
-
 .mave-hero {
   width: 100%;
   min-height: 750px;
@@ -454,7 +448,7 @@ body {
     linear-gradient(to bottom,
       transparent 30%,
       rgba(0, 0, 0, 0.9) 100%),
-    url("/images/mave-hero.jpg");
+    url("/images/b1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -502,11 +496,13 @@ body {
   font-size: 18px;
   margin: 24px 0;
 }
+
 .mave-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
 }
+
 .mave-card {
   background-color: #302e2d;
   border-radius: 25px;
@@ -516,18 +512,21 @@ body {
   line-height: 1.6;
   font-weight: bold;
 }
+
 .how-mave-works {
   width: 100%;
   padding: 50px 3%;
   background: #ffffff;
   font-family: Arial, sans-serif;
 }
+
 .mave-layout {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   gap: 60px;
   align-items: center;
 }
+
 .mave-photo {
   position: relative;
   width: 100%;
@@ -535,12 +534,14 @@ body {
   overflow: hidden;
   border-radius: 15px;
 }
+
 .mave-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
+
 .photo-labels {
   position: absolute;
   bottom: 20px;
@@ -548,6 +549,7 @@ body {
   display: flex;
   gap: 10px;
 }
+
 .photo-labels span {
   background: #403329;
   color: #ffffff;
@@ -555,17 +557,20 @@ body {
   border-radius: 25px;
   font-size: 15px;
 }
+
 .mave-info {
   text-align: center;
   max-width: 500px;
   margin: 0 auto;
 }
+
 .mave-info h2 {
   font-size: 40px;
   font-weight: 400;
   margin-bottom: 45px;
   color: #292929;
 }
+
 .steps {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -573,10 +578,12 @@ body {
   position: relative;
   margin-bottom: 38px;
 }
+
 .step {
   position: relative;
   padding-top: 55px;
 }
+
 .step span {
   position: absolute;
   top: 0;
@@ -592,6 +599,7 @@ body {
   font-size: 18px;
   z-index: 1;
 }
+
 .step p {
   background: #f6edcc;
   padding: 32px 5px;
@@ -599,16 +607,19 @@ body {
   font-size: 17px;
   white-space: nowrap;
 }
+
 .mave-description {
   font-size: 21px;
   line-height: 1.5;
   color: #777777;
   margin-bottom: 65px;
 }
+
 .review {
   border-top: 1px solid #eeeeee;
   padding-top: 60px;
 }
+
 .review-badge {
   display: inline-flex;
   align-items: center;
@@ -620,16 +631,19 @@ body {
   border-radius: 30px;
   font-size: 15px;
 }
+
 .stars {
   color: #729447;
   font-size: 23px;
   letter-spacing: 2px;
 }
+
 .review-quote {
   font-size: 20px;
   line-height: 1.5;
   margin: 28px 0;
 }
+
 .review-person {
   display: flex;
   justify-content: center;
@@ -637,6 +651,7 @@ body {
   gap: 12px;
   text-align: left;
 }
+
 .person-avatar {
   width: 52px;
   height: 52px;
@@ -647,35 +662,42 @@ body {
   justify-content: center;
   font-size: 22px;
 }
+
 .review-person p {
   color: #888888;
   margin-bottom: 5px;
 }
+
 .review-person small {
   color: #888888;
 }
+
 .companion-section {
   width: 100%;
   padding: 0 3%;
   background: #ffffff;
   margin-top: 50px;
 }
+
 .companion-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: stretch;
 }
+
 .companion-left {
   text-align: center;
   padding: 60px 10px;
 }
+
 .companion-label {
   color: #d8b53d;
   letter-spacing: 6px;
   font-size: 18px;
   margin-bottom: 50px;
 }
+
 .companion-left h2 {
   color: #292929;
   font-size: 42px;
@@ -683,15 +705,18 @@ body {
   font-weight: 500;
   margin-bottom: 55px;
 }
+
 .free-access {
   font-size: 20px;
   margin-bottom: 45px;
 }
+
 .feature-cards {
   display: flex;
   justify-content: center;
   gap: 8px;
 }
+
 .feature-card {
   width: 150px;
   min-height: 92px;
@@ -703,6 +728,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
 }
+
 .feature-card {
   position: relative;
   overflow: hidden;
@@ -710,6 +736,7 @@ body {
   background: #f7f4ed;
   border-radius: 25px;
 }
+
 .feature-card::before {
   content: "";
   position: absolute;
@@ -721,29 +748,37 @@ body {
   transform-origin: left;
   animation: moveBackground 9s linear infinite;
 }
+
 .feature-card:nth-child(2)::before {
   animation-delay: 3s;
 }
+
 .feature-card:nth-child(3)::before {
   animation-delay: 6s;
 }
+
 @keyframes moveBackground {
   0% {
     transform: scaleX(0);
   }
+
   22% {
     transform: scaleX(1);
   }
+
   33.33% {
     transform: scaleX(1);
   }
+
   33.34% {
     transform: scaleX(0);
   }
+
   100% {
     transform: scaleX(0);
   }
 }
+
 .compatibility {
   margin-top: 65px;
   padding-top: 45px;
@@ -751,6 +786,7 @@ body {
   color: #777777;
   font-size: 18px;
 }
+
 .companion-right {
   min-height: 720px;
   background: #f7f4ed;
@@ -760,6 +796,7 @@ body {
   align-items: center;
   overflow: hidden;
 }
+
 .phone-image {
   width: 300px;
   height: 620px;
@@ -767,6 +804,7 @@ body {
   display: block;
   animation: phoneFade 0.6s ease;
 }
+
 @keyframes phoneFade {
   from {
     opacity: 0.4;
@@ -776,17 +814,20 @@ body {
     opacity: 1;
   }
 }
+
 .results-section {
   padding: 80px 20px;
   background: #fff;
   text-align: center;
 }
+
 .results-label {
   color: #d9b52f;
   font-size: 16px;
   letter-spacing: 5px;
   margin-bottom: 30px;
 }
+
 .results-section h2 {
   color: #292929;
   font-size: 30px;
@@ -794,6 +835,7 @@ body {
   line-height: 1.4;
   margin-bottom: 55px;
 }
+
 .results-list {
   max-width: 735px;
   margin: 0 auto;
@@ -867,23 +909,27 @@ body {
   color: #142033;
   margin-bottom: 55px;
 }
+
 .timeline {
   width: 100%;
   max-width: 600px;
   margin: auto;
 }
+
 .phase {
   min-height: 335px;
   position: relative;
   padding: 8px 10px;
   text-align: center;
 }
+
 .phase-line {
   width: 1px;
   height: 100px;
   background: #e8dba9;
   margin: 25px auto 0;
 }
+
 .circle {
   width: 15px;
   height: 15px;
@@ -891,38 +937,46 @@ body {
   border-radius: 50%;
   margin: -1px auto 0;
 }
+
 .phase-last {
   min-height: 250px;
 }
+
 .phase-last .phase-line,
 .phase-last .circle {
   display: none;
 }
+
 .phase-name {
   font-size: 18px;
   color: #d5ad29;
   margin-bottom: 10px;
 }
+
 .phase-name span {
   margin: 0 7px;
 }
+
 .phase h3 {
   font-size: 15px;
   font-weight: 400;
   color: #171717;
   margin-bottom: 17px;
 }
+
 .description {
   max-width: 430px;
   margin: auto;
   font-size: 15px;
   color: #696969;
 }
+
 .experts-section {
   width: 100%;
   padding: 50px 20px 30px;
   background: #ffffff;
 }
+
 .experts-box {
   max-width: 1258px;
   min-height: 590px;
@@ -930,26 +984,27 @@ body {
   padding: 70px 20px;
   border-radius: 26px;
   background-color: #211f1e;
-  background-image: repeating-linear-gradient(
-    90deg,
-    transparent 0px,
-    transparent 12px,
-    rgba(255, 255, 255, 0.015) 13px,
-    transparent 18px
-  );
+  background-image: repeating-linear-gradient(90deg,
+      transparent 0px,
+      transparent 12px,
+      rgba(255, 255, 255, 0.015) 13px,
+      transparent 18px);
   color: white;
   text-align: center;
 }
+
 .experts-box h2 {
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 60px;
   color: white;
 }
+
 .expert-content {
   min-height: 175px;
   animation: showExpert 0.5s ease;
 }
+
 .expert-quote {
   max-width: 430px;
   margin: 0 auto 35px;
@@ -957,15 +1012,18 @@ body {
   font-weight: 600;
   line-height: 1.4;
 }
+
 .expert-content h3 {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 8px;
 }
+
 .expert-role {
   font-size: 15px;
   color: #c6c4c4;
 }
+
 .expert-images {
   display: flex;
   justify-content: center;
@@ -973,6 +1031,7 @@ body {
   gap: 18px;
   margin-top: 25px;
 }
+
 .expert-button {
   position: relative;
   width: 54px;
@@ -991,6 +1050,7 @@ body {
   border-radius: 50%;
   display: block;
 }
+
 .expert-button.active::after {
   content: "";
   position: absolute;
@@ -999,39 +1059,37 @@ body {
   width: 62px;
   height: 62px;
   border-radius: 50%;
-  background: conic-gradient(
-    #3478f6 0deg,
-    #3478f6 80deg,
-    transparent 80deg,
-    transparent 360deg
-  );
-  -webkit-mask: radial-gradient(
-    farthest-side,
-    transparent calc(100% - 2px),
-    black calc(100% - 1.5px)
-  );
-  mask: radial-gradient(
-    farthest-side,
-    transparent calc(100% - 2px),
-    black calc(100% - 1.5px)
-  );
+  background: conic-gradient(#3478f6 0deg,
+      #3478f6 80deg,
+      transparent 80deg,
+      transparent 360deg);
+  -webkit-mask: radial-gradient(farthest-side,
+      transparent calc(100% - 2px),
+      black calc(100% - 1.5px));
+  mask: radial-gradient(farthest-side,
+      transparent calc(100% - 2px),
+      black calc(100% - 1.5px));
   animation: rotateOutline 4s linear infinite;
   pointer-events: none;
 }
+
 @keyframes rotateOutline {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
-.science-heading {
+
+.science6-heading {
   padding: 0 52px;
   margin-bottom: 80px;
   text-align: left;
 }
-.science-heading p {
+
+.science6-heading p {
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 5px;
@@ -1041,7 +1099,8 @@ body {
   margin-bottom: 10px;
   margin-top: 50px;
 }
-.science-heading h2 {
+
+.science6-heading h2 {
   text-align: left;
   font-size: 42px;
   font-weight: 400;
@@ -1049,17 +1108,20 @@ body {
   color: #282828;
   margin-bottom: 20px;
 }
-.science-slider {
+
+.science6-slider {
   width: 100%;
   overflow: hidden;
 }
-.science-track {
+
+.science6-track {
   display: flex;
   gap: 25px;
   width: max-content;
   animation: moveCards 35s linear infinite;
 }
-.science-card {
+
+.science6-card {
   width: 361px;
   min-width: 361px;
   height: 400px;
@@ -1069,11 +1131,13 @@ body {
   display: flex;
   flex-direction: column;
 }
-.science-card {
+
+.science6-card {
   text-align: left;
   align-items: flex-start;
 }
-.science-category {
+
+.science6-category {
   color: #78934f;
   font-size: 19px;
   display: flex;
@@ -1083,31 +1147,36 @@ body {
   margin-bottom: 25px;
   text-align: left;
 }
-.science-category span {
+
+.science6-category span {
   color: #78934f;
   font-size: 15px;
 }
-.science-quote {
+
+.science6-quote {
   width: 100%;
   text-align: left;
 }
-.science-bottom {
+
+.science6-bottom {
   width: 100%;
   text-align: left;
   margin-top: auto;
 }
-.science-bottom p {
+
+.science6-bottom p {
   font-size: 15px;
   color: #696969;
   margin-bottom: 12px;
   text-align: left;
 }
 
-.science-bottom a {
+.science6-bottom a {
   font-size: 18px;
-  color:#d5ad29 ;
+  color: #d5ad29;
   text-align: left;
 }
+
 @keyframes moveCards {
   from {
     transform: translateX(0);
@@ -1117,13 +1186,13 @@ body {
     transform: translateX(-50%);
   }
 }
+
 .launch-section {
   width: 100%;
   padding: 50px 0 80px;
   background-color: #ffffff;
 }
 
-/* Video container */
 .launch-video-box {
   width: 90%;
   max-width: 1250px;
@@ -1135,7 +1204,6 @@ body {
   background-color: #000000;
 }
 
-/* Video */
 .launch-video {
   width: 100%;
   height: 100%;
@@ -1143,7 +1211,6 @@ body {
   object-fit: cover;
 }
 
-/* Watch Launch Video button */
 .launch-video-button {
   position: absolute;
   top: 50%;
@@ -1163,7 +1230,6 @@ body {
   background-color: #f0f0f0;
 }
 
-/* Heading and assessment button */
 .launch-bottom {
   text-align: center;
   padding: 65px 20px 0;
@@ -1176,7 +1242,6 @@ body {
   margin-bottom: 25px;
 }
 
-/* White assessment button */
 .assessment-button {
   padding: 16px 28px;
   background-color: #ffffff;
@@ -1186,88 +1251,645 @@ body {
   font-size: 16px;
   cursor: default;
 }
+
 .faq-section {
-  width: 100%;
   padding: 80px 0;
-  background-color: #ffffff;
 }
 
 .faq-container {
   width: 90%;
-  max-width: 1250px;
+  max-width: 1200px;
   margin: 0 auto;
-
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-columns: 1fr 1.3fr;
   gap: 60px;
   align-items: start;
 }
 
-/* Left Side */
-.faq-left h2 {
-  font-size: 44px;
-  line-height: 1.15;
-  font-weight: 500;
-  color: #222222;
-  margin-bottom: 22px;
-}
-
-.faq-left p {
-  font-size: 16px;
-  line-height: 1.7;
-  color: #555555;
-}
-
-.faq-left a {
-  color: #222222;
-  text-decoration: underline;
-}
-
-.faq-right {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  align-items: start;
-}
-
-/* Individual Question Box */
-.faq-card {
-  border: 1px solid #e5e5e5;
-  border-radius: 12px;
-  background-color: #ffffff;
-  padding: 20px;
-  min-width: 0;
-}
-
-/* Question */
 .faq-question {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 12px;
-
-  border: none;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 0;
   background: transparent;
-  color: #222222;
-  text-align: left;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
+  border: none;
+  border-bottom: 1px solid #dddddd;
   cursor: pointer;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  color: #142033;
 }
 
 .faq-question span {
-  font-size: 24px;
+  font-size: 28px;
   flex-shrink: 0;
 }
 
-/* Answer */
 .faq-answer {
-  padding-top: 14px;
-  color: #555555;
-  font-size: 14px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.35s ease, opacity 0.3s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.faq-answer.active {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.faq-answer p {
+  margin: 0;
+  text-align: left;
+  padding: 0 0 22px;
+  font-size: 16px;
   line-height: 1.7;
+  color: #374151;
+}
+
+.newsletter {
+  margin: 32px 2.5% 170px;
+  padding: 50px 3%;
+  background: #f6f1d9;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.newsletter-text {
+  width: 45%;
+}
+
+.newsletter-text h2 {
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0 0 20px;
+}
+
+.newsletter-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #77736b;
+  margin: 0;
+}
+
+.newsletter-form {
+  width: 52%;
+  display: flex;
+  gap: 18px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+.newsletter-form button {
+  padding: 16px 24px;
+  border: none;
+  border-radius: 12px;
+  background: #2e2b26;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.footer-section {
+  width: 95%;
+  margin: 0 auto;
+  padding: 150px 0 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: start;
+  background: #fffefa;
+  color: #201f1d;
+}
+
+.footer-company {
+  width: 100%;
+  text-align: left;
+}
+
+.footer-logo {
+  font-size: 46px;
+  font-weight: 400;
+  margin: 0 0 28px;
+}
+
+.company-address p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #56534f;
+  margin: 0;
+}
+
+.india-address {
+  margin-top: 24px;
+}
+
+.footer-country {
+  margin-top: 55px;
+}
+
+.footer-country p {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.footer-country a {
+  color: #222;
+  text-decoration: underline;
+}
+
+.footer-disclaimer {
+  max-width: 470px;
+  margin: 300px 0 0;
+  color: #66615c;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.footer-legal {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-legal a {
+  color: #222;
+  font-size: 14px;
+}
+
+.footer-right {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: start;
+  text-align: left;
+}
+
+.footer-right h4 {
+  color: #a09b94;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0 0 25px;
+}
+
+.footer-index a {
+  display: block;
+  color: #111;
+  font-size: 20px;
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+
+.footer-index a:last-child {
+  color: #ff5b19;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-icons a {
+  color: #99958f;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-contact {
+  grid-column: 2;
+  margin-top: 75px;
+  text-align: left;
+}
+
+.footer-contact p,
+.footer-contact a {
+  display: block;
+  font-size: 17px;
+  color: #222;
+  margin: 0 0 20px;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.footer-contact img {
+  width: 375px;
+  height: 375px;
+  display: block;
+  margin-top: 55px;
+  object-fit: cover;
+  border-radius: 22px;
+}
+
+.science-page {
+  width: 100%;
+  background: #fffefa;
+  color: #24211f;
+  font-family: Arial, sans-serif;
+  overflow: clip;
+  scroll-behavior: smooth;
+}
+
+.science-page * {
+  box-sizing: border-box;
+}
+
+.science-intro {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  padding: 70px 3% 80px;
+  gap: 0;
+  align-items: start;
+}
+
+.science-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  border-left: 2px solid #eeeeeb;
+  padding-left: 15px;
+  position: sticky;
+  top: 120px;
+  height: fit-content;
+  align-self: start;
+}
+
+.science-link {
+  position: relative;
+  display: block;
+  color: #292521;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 1.3;
+  transition: color 0.3s ease;
+}
+
+.science-link.active {
+  color: #c65e20;
+}
+
+.science-link.active::before {
+  content: "";
+  position: absolute;
+  left: -17px;
+  top: -4px;
+  width: 3px;
+  height: calc(100% + 8px);
+  background: #d9ba42;
+  border-radius: 5px;
+}
+
+.science-main-content {
+  width: 100%;
+  min-width: 0;
+}
+
+.science-main-heading {
+  max-width: 850px;
+  margin: 0 0 75px;
+  color: #24211f;
+  font-size: clamp(36px, 3.2vw, 54px);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.science-video {
+  width: 100%;
+  max-width: 850px;
+  aspect-ratio: 16 / 9;
+  padding: 20px 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+  background:
+    radial-gradient(ellipse at 50% 100%,
+      #34352c 0%,
+      #10120f 45%,
+      #030504 100%);
+}
+
+.science-video-player {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: none;
+}
+
+.science-video-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.science-video-logo {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fffefa;
+  color: #171717;
+  border-radius: 50%;
+  font-size: 27px;
+}
+
+.science-video-heading h2 {
+  margin: 0 0 5px;
+  color: white;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.science-video-heading p {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+}
+
+.science-video-center {
+  text-align: center;
+  padding-top: 35px;
+}
+
+.science-video-center h3 {
+  margin: 20px 0;
+  color: white;
+  font-size: clamp(24px, 3vw, 48px);
+  line-height: 1.05;
+  font-weight: 500;
+}
+
+.science-play-btn {
+  width: 75px;
+  height: 58px;
+  background: #ff003b;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.science-detail-section {
+  width: 100%;
+  padding: 40px 0 60px;
+  box-sizing: border-box;
+}
+
+.science-detail-container {
+  width: 100%;
+  max-width: 1068px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.science-detail-intro {
+  text-align: left;
+  margin: 0 0 30px;
+  font-size: 15px;
+  color: #212020;
+  font-weight: 500;
+}
+
+.science-detail-item {
+  margin: 0 0 30px;
+  text-align: left;
+}
+
+.science-detail-intro,
+.science-detail-item {
+  padding-left: 250px;
+  padding-right: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.science-impact-section {
+  width: 100%;
+  padding: 50px 0 60px;
+  box-sizing: border-box;
+}
+
+.science-impact-container {
+  width: 100%;
+  max-width: 1068px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.science2-quote {
+  font-size: 32px;
+  line-height: 1.3;
+  color: #c96b2c;
+  margin: 0 0 180px;
+  margin-left: 250px;
+}
+
+.science-impact-heading {
+  font-size: 46px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #111111;
+  margin: 0 0 55px;
+  margin-left: 250px;
+}
+
+.science-impact-text {
+  font-size: 15px;
+  color: #111111;
+  margin: 0 0 48px;
+  margin-left: 250px;
+}
+
+.science-impact-list {
+  margin: 0 0 48px 55px;
+}
+
+.science-impact-list p {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #777777;
+  margin: 0 0 28px;
+  margin-left: 250px;
+}
+
+.science-impact-text a {
+  color: #111111;
+  text-decoration: underline;
+}
+
+.science-solution-section {
+  width: 100%;
+  padding: 50px 0 70px;
+  box-sizing: border-box;
+}
+
+.science-solution-container {
+  width: 100%;
+  max-width: 1068px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.science-watch {
+  margin-bottom: 180px;
+  margin-left: 250px;
+}
+
+.science-watch-title {
+  font-size: 23px;
+  margin: 0 0 38px;
+}
+
+.science-watch-videos {
+  display: flex;
+  gap: 18px;
+  width: 100%;
+}
+
+.science-watch-videos iframe {
+  width: 50%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 16px;
+}
+
+.science-solution-heading {
+  font-size: 30px;
+  line-height: 1.35;
+  font-weight: 400;
+  margin: 0 0 40px;
+  margin-left: 250px;
+}
+
+.science-solution-text {
+  font-size: 15px;
+  color: #777777;
+  margin: 0 0 30px;
+  margin-left: 250px;
+}
+
+.science-founder-quote {
+  margin-top: 90px;
+}
+
+.science1-quote-mark {
+  display: block;
+  color: #c96b2c;
+  font-size: 36px;
+  margin-bottom: 30px;
+  margin-left: 250px;
+}
+
+.science1-founder-quote p {
+  font-size: 28px;
+  color: #c96b2c;
+  margin: 0 0 45px;
+  margin-left: 250px;
+}
+
+.science1-founder-name {
+  font-size: 18px;
+  color: #777777;
+  margin-left: 250px;
+}
+
+.science1-founder-name a {
+  color: #777777;
+  text-decoration: underline;
+}
+.mave9-hero {
+  width: 100%;
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #faf8f6;
+  box-sizing: border-box;
+}
+.mave9-hero h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color:#d8b940;
+  margin: 0 0 20px;
+  text-align: center;
+}
+.mave9-hero h1 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #222222;
+  margin: 0 0 20px;
+  text-align: center;
+}
+.mave9-description {
+  max-width: 600px;
+  margin: 0 auto 35px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #555555;
+  text-align: center;
+}
+.mave9-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+.mave9-image img {
+  display: block;
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.mave9-button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 15px 90px;
+  background-color: #d8b940;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.mave9-bottom-text {
+  max-width: 650px;
+  margin: 30px auto 0;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #555555;
+  text-align: center;
 }
 
 
@@ -1285,3 +1907,1283 @@ body {
 
 
 
+
+
+@media (max-width: 700px) {
+
+  .mave-page,
+  #root,
+  body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: clip;
+  }
+
+  .mave-page *,
+  #root * {
+    box-sizing: border-box;
+  }
+
+  img,
+  video,
+  canvas,
+  svg {
+    max-width: 100%;
+  }
+
+  .header {
+    width: 100%;
+    padding: 16px 20px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .navbar {
+    width: 100%;
+    order: 3;
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    overflow-x: auto;
+  }
+
+  .navbar a {
+    flex-shrink: 0;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .order-btn {
+    max-width: 100%;
+    padding: 11px 14px;
+    font-size: 13px;
+    white-space: normal;
+  }
+
+  .hero {
+    width: 100%;
+    padding: 25px 16px;
+  }
+
+  .hero-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero-left h1 {
+    font-size: 36px;
+    line-height: 1.15;
+    overflow-wrap: break-word;
+  }
+
+  .hero-left p,
+  .review-text,
+  .review-name {
+    font-size: 15px;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+  }
+
+  .profile-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .profile-images img {
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+
+  .featured {
+    width: 100%;
+    padding: 30px 18px;
+  }
+
+  .featured-title {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .featured-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 18px 22px;
+  }
+
+  .featured-logos span {
+    max-width: 100%;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+  }
+
+  .testimonials {
+    width: 100%;
+    padding: 40px 16px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .testimonials h2 {
+    font-size: 28px;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .testimonial-slider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .testimonial-track {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .testimonial-card {
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 24px 18px;
+    text-align: center;
+  }
+
+  .testimonial-card img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 18px;
+  }
+
+  .testimonial-card h3 {
+    font-size: 18px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    margin-bottom: 16px;
+  }
+
+  .testimonial-card p {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .testimonial-card small {
+    font-size: 13px;
+  }
+
+  .slider-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .slider-buttons button {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .brain-section {
+    width: 100%;
+    min-height: auto;
+    padding: 55px 18px;
+  }
+
+  .brain-section h1 {
+    font-size: 32px;
+    line-height: 1.25;
+    margin: 0 0 40px;
+    overflow-wrap: break-word;
+  }
+
+  .brain-diagram {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 15px;
+    align-items: center;
+  }
+
+  .left-labels,
+  .right-labels {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 160px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 18px;
+    font-size: 12px;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+  }
+
+  .left-labels {
+    text-align: left;
+    padding-right: 0;
+  }
+
+  .right-labels {
+    text-align: right;
+    padding-left: 0;
+  }
+
+  .connecting-lines {
+    display: none;
+  }
+
+  .introducing-section {
+    width: 100%;
+    min-height: auto;
+    padding: 55px 18px 25px;
+  }
+
+  .introducing-section h1 {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+
+  .product-area {
+    width: 100%;
+    height: auto;
+    min-height: 260px;
+    margin-top: 20px;
+  }
+
+  .product-image {
+    display: block;
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    max-height: 340px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  .product-description {
+    width: 100%;
+    min-height: auto;
+    padding: 30px 20px 50px;
+  }
+
+  .product-description h2 {
+    font-size: 28px;
+    line-height: 1.35;
+    overflow-wrap: break-word;
+  }
+
+  .mave-hero {
+    width: 100%;
+    min-height: auto;
+    padding: 45px 18px 25px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .mave-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 25px;
+  }
+
+  .mave-text {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .mave-text p {
+    font-size: 17px;
+    line-height: 1.65;
+    margin-bottom: 20px;
+    overflow-wrap: break-word;
+  }
+
+  .mave-right {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .mave-right .order-btn,
+  .order1-btn {
+    width: 100%;
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .trial-text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 18px 0;
+  }
+
+  .mave-cards {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .mave-card {
+    min-width: 0;
+    padding: 18px 10px;
+    font-size: 13px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+  }
+
+  .how-mave-works {
+    width: 100%;
+    padding: 35px 18px;
+  }
+
+  .mave-layout {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+  }
+
+  .mave-photo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .mave-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .photo-labels {
+    left: 10px;
+    right: 10px;
+    bottom: 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .photo-labels span {
+    padding: 9px 12px;
+    font-size: 12px;
+  }
+
+  .mave-info {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .mave-info h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .steps {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .step {
+    min-width: 0;
+    padding: 12px 5px;
+  }
+
+  .step p {
+    padding: 15px 5px;
+    font-size: 13px;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  .mave-description {
+    font-size: 16px;
+    line-height: 1.65;
+    margin-bottom: 35px;
+    overflow-wrap: break-word;
+  }
+
+  .review {
+    padding-top: 30px;
+  }
+
+  .review-badge {
+    max-width: 100%;
+    gap: 7px;
+    font-size: 12px;
+  }
+
+  .stars {
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+
+  .review-quote {
+    font-size: 17px;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+  }
+
+  .companion-section {
+    width: 100%;
+    padding: 0 18px;
+    margin-top: 30px;
+  }
+
+  .companion-container {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .companion-left {
+    width: 100%;
+    min-width: 0;
+    padding: 35px 0;
+  }
+
+  .companion-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    overflow-wrap: break-word;
+  }
+
+  .companion-left h2 {
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+    overflow-wrap: break-word;
+  }
+
+  .free-access {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .feature-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .feature-card {
+    width: 100%;
+    min-width: 0;
+    min-height: 95px;
+    padding: 12px 6px;
+    font-size: 12px;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+  }
+
+  .compatibility {
+    margin-top: 30px;
+    padding-top: 25px;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+  }
+
+  .companion-right {
+    width: 100%;
+    min-width: 0;
+    min-height: 420px;
+    border-radius: 15px;
+  }
+
+  .phone-image {
+    width: 100%;
+    max-width: 280px;
+    height: 400px;
+    object-fit: contain;
+  }
+
+  .results-section {
+    width: 100%;
+    padding: 50px 18px;
+  }
+
+  .results-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+  }
+
+  .results-section h2 {
+    font-size: 26px;
+    line-height: 1.35;
+    margin-bottom: 30px;
+    overflow-wrap: break-word;
+  }
+
+  .results-list {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .result-row {
+    width: 100%;
+    height: auto;
+    min-height: 75px;
+    border-radius: 25px;
+  }
+
+  .result-fill {
+    width: 100%;
+    min-height: 75px;
+    height: auto;
+    padding: 14px 16px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    white-space: normal;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .result-fill span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .how-it-works {
+    width: 100%;
+    padding: 40px 18px 50px;
+  }
+
+  .how-it-works h2 {
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 35px;
+  }
+
+  .timeline {
+    width: 100%;
+  }
+
+  .phase {
+    min-height: 260px;
+    padding: 8px 5px;
+  }
+
+  .phase-last {
+    min-height: 180px;
+  }
+
+  .phase-name {
+    font-size: 16px;
+  }
+
+  .phase h3 {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+  }
+
+  .experts-section {
+    width: 100%;
+    padding: 30px 16px;
+  }
+
+  .experts-box {
+    width: 100%;
+    min-height: auto;
+    padding: 40px 18px;
+    border-radius: 18px;
+  }
+
+  .experts-box h2 {
+    font-size: 29px;
+    line-height: 1.3;
+    margin-bottom: 35px;
+    overflow-wrap: break-word;
+  }
+
+  .expert-content {
+    min-height: auto;
+  }
+
+  .expert-quote {
+    font-size: 17px;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+  }
+
+  .expert-images {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .expert-button,
+  .expert-button img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .expert-button.active::after {
+    width: 53px;
+    height: 53px;
+  }
+
+  .science-heading {
+    padding: 0 18px;
+    margin-bottom: 35px;
+  }
+
+  .science-heading p {
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    margin-top: 25px;
+  }
+
+  .science-heading h2 {
+    font-size: 30px;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+  }
+
+  .science-slider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .science-track {
+    gap: 14px;
+  }
+
+  .science-card {
+    width: calc(100vw - 36px);
+    min-width: calc(100vw - 36px);
+    height: auto;
+    min-height: 320px;
+    padding: 24px;
+  }
+
+  .science-category {
+    font-size: 15px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .science-quote,
+  .science-bottom {
+    width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .launch-section {
+    width: 100%;
+    padding: 30px 18px 45px;
+  }
+
+  .launch-video-box {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    border-radius: 14px;
+  }
+
+  .launch-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .launch-video-button {
+    max-width: 85%;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .launch-bottom {
+    padding: 35px 0 0;
+  }
+
+  .launch-bottom h2 {
+    font-size: 28px;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+  }
+
+  .assessment-button {
+    max-width: 100%;
+    padding: 13px 18px;
+    font-size: 14px;
+    white-space: normal;
+  }
+
+  .faq-section {
+    width: 100%;
+    padding: 45px 18px;
+  }
+
+  .faq-container {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 25px;
+  }
+
+  .faq-question {
+    gap: 12px;
+    padding: 18px 0;
+    font-size: 15px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+  }
+
+  .faq-answer p {
+    font-size: 14px;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+  }
+
+  .newsletter {
+    width: auto;
+    margin: 25px 16px 50px;
+    padding: 30px 20px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 22px;
+    border-radius: 18px;
+  }
+
+  .newsletter-text,
+  .newsletter-form {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .newsletter-text h2 {
+    font-size: 30px;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+  }
+
+  .newsletter-text p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+    min-width: 0;
+    font-size: 15px;
+  }
+
+  .footer-section {
+    width: 100%;
+    padding: 45px 20px 30px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 35px;
+  }
+
+  .footer-logo {
+    font-size: 34px;
+  }
+
+  .footer-disclaimer {
+    max-width: 100%;
+    margin: 35px 0 0;
+    overflow-wrap: break-word;
+  }
+
+  .footer-right {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 15px;
+  }
+
+  .footer-index a {
+    font-size: 15px;
+    overflow-wrap: anywhere;
+  }
+
+  .footer-contact {
+    grid-column: 1 / -1;
+    margin-top: 20px;
+    min-width: 0;
+  }
+
+  .footer-contact p,
+  .footer-contact a {
+    font-size: 14px;
+    overflow-wrap: anywhere;
+  }
+
+  .footer-contact img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .science-intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px 40px;
+    box-sizing: border-box;
+  }
+
+  .science-sidebar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 20px;
+    padding-left: 12px;
+    border-left: 2px solid #eeeeeb;
+    position: static;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .science-link {
+    font-size: 15px;
+    line-height: 1.4;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .science-link.active::before {
+    left: -14px;
+    top: 0;
+    height: 100%;
+  }
+
+  .science-main-content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .science-main-heading {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(28px, 6vw, 36px);
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    margin: 0 0 28px;
+    overflow-wrap: anywhere;
+    box-sizing: border-box;
+  }
+
+  .science-video {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    padding: 12px;
+    margin: 0;
+    border-radius: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .science-video-player {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  .science-video-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+  }
+
+  .science-video-logo {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    font-size: 21px;
+  }
+
+  .science-video-heading h2 {
+    font-size: 15px;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+  }
+
+  .science-video-heading p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .science-video-center {
+    width: 100%;
+    padding-top: 12px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .science-video-center h3 {
+    font-size: clamp(19px, 5vw, 28px);
+    line-height: 1.15;
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+  }
+
+  .science-play-btn {
+    width: 55px;
+    height: 42px;
+    font-size: 21px;
+    border-radius: 9px;
+  }
+
+  .science-detail-section {
+    width: 100%;
+    padding: 30px 20px 40px;
+    box-sizing: border-box;
+  }
+
+  .science-detail-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .science-detail-intro {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 26px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+  }
+
+  .science-detail-item {
+    width: 100%;
+    margin: 0 0 26px;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .science-detail-item h2 {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 0 8px;
+    overflow-wrap: anywhere;
+  }
+
+  .science-detail-item p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    overflow-wrap: anywhere;
+    box-sizing: border-box;
+  }
+
+  .science-impact-section {
+    width: 100%;
+    padding: 30px 20px 40px;
+    box-sizing: border-box;
+  }
+
+  .science-impact-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .science2-quote {
+    width: 100%;
+    font-size: 21px;
+    line-height: 1.5;
+    margin: 0 0 60px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+  }
+
+  .science-impact-heading {
+    width: 100%;
+    font-size: 30px;
+    line-height: 1.3;
+    margin: 0 0 25px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+  }
+
+  .science-impact-text {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 25px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+  }
+
+  .science-impact-list {
+    width: 100%;
+    margin: 0 0 30px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .science-impact-list p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #777777;
+    margin: 0 0 18px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+  }
+
+  .science-impact-text a {
+    overflow-wrap: anywhere;
+  }
+
+  .science-solution-section {
+    width: 100%;
+    padding: 30px 20px 45px;
+    box-sizing: border-box;
+  }
+
+  .science-solution-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .science-watch {
+    width: 100%;
+    margin: 0 0 60px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .science-watch-title {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 0 20px;
+  }
+
+  .science-watch-videos {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .science-watch-videos iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 12px;
+  }
+
+  .science-solution-heading {
+    width: 100%;
+    max-width: 100%;
+    font-size: 27px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin: 0 0 24px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+  }
+
+  .science-solution-text {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #777777;
+    margin: 0 0 22px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+  }
+
+  .science1-founder-quote {
+    width: 100%;
+    margin-top: 50px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .science1-quote-mark {
+    font-size: 30px;
+    margin: 0 0 22px;
+  }
+
+  .science1-founder-quote p {
+    width: 100%;
+    font-size: 21px;
+    line-height: 1.5;
+    color: #c96b2c;
+    margin: 0 0 28px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+  }
+
+  .science1-founder-name {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #777777;
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .science-founder-name a {
+    color: #777777;
+    text-decoration: underline;
+  }
+   .mave9-hero {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 40px 18px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: visible;
+  }
+
+  .mave9-hero h2 {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 14px;
+  }
+
+  .mave9-hero h1 {
+    font-size: 30px;
+    line-height: 1.3;
+    margin: 0 0 18px;
+  }
+
+  .mave9-description {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 25px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .mave9-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+    overflow: visible;
+  }
+
+  .mave9-image img {
+    display: block;
+    width: 230px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+.mave9-button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 15px 90px;
+  background-color: #d8b940;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.mave9-bottom-text {
+  max-width: 650px;
+  margin: 30px auto 0;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #555555;
+  text-align: center;
+}
+
+
+
+}
