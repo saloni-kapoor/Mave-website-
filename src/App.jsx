@@ -7,6 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Home />} />
         <Route path="/science" element={<Science />} />
         <Route path="/mave" element={<Mave />} />
