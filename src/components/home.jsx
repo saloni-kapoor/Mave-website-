@@ -73,10 +73,7 @@ function HowItWorks() {
   return (
     <section className="how-it-works">
       <h2>How it works</h2>
-
-
       <div className="timeline">
-
         <div className="phase">
           <p className="phase-name">Phase 1 <span>•</span> Week 1 - 4</p>
           <h3>Gentle activation</h3>
@@ -84,11 +81,9 @@ function HowItWorks() {
             You notice a subtle boost in focus,
             energy and stress regulation.
           </p>
-
           <div className="phase-line"></div>
           <div className="circle"></div>
         </div>
-
         <div className="phase">
           <p className="phase-name">Phase 2 <span>•</span> Week 5 - 8</p>
           <h3>Nudge</h3>
@@ -140,10 +135,8 @@ function ExpertsSection() {
     const timer = setInterval(() => {
       setActive((previous) => (previous + 1) % experts.length);
     }, 4000);
-
     return () => clearInterval(timer);
   }, []);
-
   return (
     <section className="experts-section">
       <div className="experts-box">
@@ -172,16 +165,12 @@ function ExpertsSection() {
     </section>
   );
 }
-
 function App() {
   const [openFaq, setOpenFaq] = useState(null);
-
   const resultsRef = useRef(null);
   const [showResults, setShowResults] = useState(false);
-
   const videoRef = useRef(null);
   const videoSectionRef = useRef(null);
-
   const [launchClicked, setLaunchClicked] = useState(false);
   useEffect(() => {
     const section = videoSectionRef.current;
@@ -445,36 +434,30 @@ function App() {
       </section>
       <section className="mave-hero">
         <div className="mave-content">
-
           <div className="mave-text">
             <p>
               Mave is designed to improve stress regulation,
               focus, and mood in just 20 mins/day.
             </p>
-
             <p>
               It uses targeted, low-intensity electrical signals
               (tDCS) to strengthen the prefrontal cortex, the
               brain's command center.
             </p>
           </div>
-
           <div className="mave-right">
             <button className="order1-btn">
               Order at Launch Price
             </button>
-
             <p className="trial-text">
               ❧ 30 day risk free trial ❧
             </p>
-
             <div className="mave-cards">
               <div className="mave-card">
                 tDCS is backed by
                 <br />
                 10K+ studies globally
               </div>
-
               <div className="mave-card">
                 No adverse side
                 <br />
@@ -482,7 +465,6 @@ function App() {
               </div>
             </div>
           </div>
-
         </div>
       </section>
       <section className="how-mave-works">
@@ -492,39 +474,32 @@ function App() {
               src="/images/b2.png"
               alt="Woman wearing Mave headset"
             />
-
             <div className="photo-labels">
               <span>Ergonomic design</span>
               <span>Adjustable strap</span>
             </div>
           </div>
           <div className="mave-info">
-
             <h2>20 minutes a day</h2>
-
             <div className="steps">
               <div className="step">
                 <span>1</span>
                 <p>Wear it</p>
               </div>
-
               <div className="step">
                 <span>2</span>
                 <p>Start session</p>
               </div>
-
               <div className="step">
                 <span>3</span>
                 <p>Move on</p>
               </div>
             </div>
-
             <p className="mave-description">
               The Mave headset works quietly in the
               background. Just wear it and go about your
               day as usual.
             </p>
-
             <div className="review">
               <div className="review-badge">
                 <span>👥</span>
@@ -532,12 +507,10 @@ function App() {
                 <span className="stars">★★★★★</span>
                 <span>Easy to use</span>
               </div>
-
               <p className="review-quote">
                 “I love it. It’s very comfortable, sleek
                 and effortless.”
               </p>
-
               <div className="review-person">
                 <div className="person-avatar">A</div>
                 <div>
@@ -546,59 +519,47 @@ function App() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
       <CompanionApp />
-
       <section
         className="results-section"
         ref={resultsRef}
       >
         <p className="results-label">THE RESULTS</p>
-
         <h2>
           Experience the shift within
           <br />
           your first month
         </h2>
-
         <div className="results-list">
           <div className="result-row">
             <div className={`result-fill fill-84 ${showResults ? "animate" : ""}`}>
               <span className="percentage">84%</span>
               <span>Improved stress regulation</span>
             </div>
-
             <span className="result-icon">♧</span>
           </div>
-
           <div className="result-row">
             <div className={`result-fill fill-80 ${showResults ? "animate" : ""}`}>
               <span className="percentage">80%</span>
               <span>Improved mood</span>
             </div>
-
             <span className="result-icon">☺</span>
           </div>
-
           <div className="result-row">
             <div className={`result-fill fill-77 ${showResults ? "animate" : ""}`}>
               <span className="percentage">77%</span>
               <span>Improved attention</span>
             </div>
-
             <span className="result-icon">◎</span>
           </div>
         </div>
       </section>
       <HowItWorks />
       <ExpertsSection />
-
-     
       <section className="science6-section">
-
         <div className="science6-heading">
           <p>THE SCIENCE</p>
           <h2>
@@ -607,58 +568,48 @@ function App() {
             25+ years of research
           </h2>
         </div>
-
         <div className="science6-slider">
           <div className="science6-track">
-
             {[1, 2].map((repeat) => (
               <>
                 <div className="science6-card">
                   <div className="science6-category">
                     <span>♧</span> Mood
                   </div>
-
                   <p className="science6-quote">
                     “In two separate experiments, series of daily
                     prefrontal tDCS sessions positively impacted
                     mood states by 64.7 and 39.1%, compared to no
                     effect in sham condition.”
                   </p>
-
                   <div className="science6-bottom">
                     <p>Mar 2016, Adelaide Austin</p>
                     <a href="#research">Read full article</a>
                   </div>
                 </div>
-
                 <div className="science6-card">
                   <div className="science6-category">
                     <span>♧</span> Working memory. cortisol.
                   </div>
-
                   <p className="science6-quote">
                     “Active tDCS blunted cortisol release in stress
                     conditions and improved working memory under
                     stress induced state.”
                   </p>
-
                   <div className="science6-bottom">
                     <p>Nov 2024, Sumit Roy</p>
                     <a href="#research">Read full article</a>
                   </div>
                 </div>
-
                 <div className="science6-card">
                   <div className="science6-category">
                     <span>♧</span> Heart rate. HRV.
                   </div>
-
                   <p className="science6-quote">
                     “Anodal HD tDCS over left DLPFC significantly
                     reduced the heart rate and improved the HRV
                     in healthy young people.”
                   </p>
-
                   <div className="science6-bottom">
                     <p>Nov 2024, Sumit Roy</p>
                     <a href="#research">Read full article</a>
@@ -668,13 +619,11 @@ function App() {
                   <div className="science6-category">
                     <span>♧</span> No side effects.
                   </div>
-
                   <p className="science6-quote">
                     "The use of conventional tDCS protocols has not
                     produced any serious adverse side effects or irreversible
                     injury across 33,200 sessions"
                   </p>
-
                   <div className="science6-bottom">
                     <p>Oct 2016,Marom Bikson</p>
                     <a href="#research">Read full article</a>
@@ -684,13 +633,11 @@ function App() {
                   <div className="science6-category">
                     <span>♧</span> Performance.
                   </div>
-
                   <p className="science6-quote">
                     "In healthy, well rested,
                     active duty soldiers active tDCS group yielded significantly
                     better perfomance compared to sham stimulation group"
                   </p>
-
                   <div className="science6-bottom">
                     <p>Aug 2025,Amanda Kelley</p>
                     <a href="#research">Read full article</a>
@@ -700,13 +647,11 @@ function App() {
                   <div className="science6-category">
                     <span>♧</span> Stress regulation sleep.
                   </div>
-
                   <p className="science6-quote">
                     "The tDCS sessions resulted in reduced stress levels,
                     improve sleep quality and enhanced percepation of stress
                     compared to sham across 175 individuals"
                   </p>
-
                   <div className="science6-bottom">
                     <p>Sep 2024,Laya Dalila dos Reis</p>
                     <a href="#research">Read full article</a>
@@ -714,10 +659,8 @@ function App() {
                 </div>
               </>
             ))}
-
           </div>
         </div>
-
       </section>
       <section className="launch-section" ref={videoSectionRef}>
         <div className="launch-video-box">
@@ -742,10 +685,8 @@ function App() {
               >
                 ▶ Watch Launch Video
               </button>
-
               <div className="launch-bottom">
                 <h2>Wondering if Mave is right for you?</h2>
-
                 <button
                   type="button"
                   className="assessment-button"
