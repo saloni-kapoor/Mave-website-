@@ -1,12 +1,8 @@
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Home from "./components/home.jsx";
 import Science from "./components/science.jsx";
 import Mave from "./components/mave.jsx";
-
 import "./App.css";
-
 function App() {
   return (
     <BrowserRouter>
@@ -18,5 +14,4 @@ function App() {
     </BrowserRouter>
   );
 }
-
 export default App;
