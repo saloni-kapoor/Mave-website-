@@ -451,8 +451,10 @@ function App() {
                         className="testimonial-video"
                         preload="metadata"
                         playsInline
+                        muted
                       >
                         <source src={user.video} type="video/mp4" />
+                        Your browser does not support this video.
                       </video>
                       <button
                         type="button"
