@@ -22,7 +22,6 @@ function CompanionApp() {
           <p className="companion-label">COMPANION APP</p>
           <h2>
             Unlock more
-            <br />
             with the Mave app
           </h2>
           <p className="free-access">
@@ -126,19 +125,18 @@ function ExpertsSection() {
     {
       image: `${import.meta.env.BASE_URL}images/e3.jpg`,
       quote:
-        "It’s like a model t car vs a 2025 Mercedes. Mave’s product is the Mercedes!",
+        "It's like a model t car vs a 2025 Mercedes. Mave's product is the Mercedes!",
       name: "Steev Hodgson",
       role: "Certified ADHD Coach",
     },
   ];
- 
   useEffect(() => {
     const timer = setInterval(() => {
       setActive((previous) => (previous + 1) % experts.length);
     }, 4000);
-    return () => clearInterval(timer);
-   }, []);
 
+    return () => clearInterval(timer);
+  }, []);
   return (
     <section className="experts-section">
       <div className="experts-box">
@@ -223,6 +221,8 @@ function App() {
     return () => observer.disconnect();
   }, []);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [videoOpen, setVideoOpen] = useState(false);
+  const [activeVideo, setActiveVideo] = useState("");
   const testimonials = [
     {
       image: `${import.meta.env.BASE_URL}images/u4.jpg`,
@@ -231,11 +231,10 @@ function App() {
       role: "Founder US",
     },
     {
-      image: `${import.meta.env.BASE_URL}images/u2.jpg`,
       review: "My frequency of anxious thoughts reduced drastically, like someone pressed a reset button.",
       name: "Vardhman Jain",
       role: "Founder IN",
-      video: true,
+      video: `${import.meta.env.BASE_URL}vedio/v1.mp4`,
     },
     {
       image: `${import.meta.env.BASE_URL}images/u3.jpg`,
@@ -250,10 +249,10 @@ function App() {
       role: "Founder US",
     },
     {
-      image: `${import.meta.env.BASE_URL}images/u6.jpg`,
       review: "I feel calmer and more focused in my daily life.",
       name: "Customer Five",
       role: "Founder IN",
+      video: `${import.meta.env.BASE_URL}vedio/v2.mp4`,
     },
     {
       image: `${import.meta.env.BASE_URL}images/u3.jpg`,
@@ -262,28 +261,117 @@ function App() {
       role: "Software Engineer US",
     },
   ];
+
+  const [isMobile, setIsMobile] = useState(
+    window.innerWidth <= 786
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 786);
+      setCurrentIndex(0);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const nextSlide = () => {
+    const maxIndex = isMobile
+      ? testimonials.length - 1
+      : testimonials.length - 3;
+
     setCurrentIndex((prev) =>
-      prev >= testimonials.length - 3 ? 0 : prev + 1
+      prev >= maxIndex ? 0 : prev + 1
     );
   };
+
   const prevSlide = () => {
+    const maxIndex = isMobile
+      ? testimonials.length - 1
+      : testimonials.length - 3;
+
     setCurrentIndex((prev) =>
-      prev <= 0 ? testimonials.length - 3 : prev - 1
+      prev <= 0 ? maxIndex : prev - 1
     );
   };
+
+  const testimonials1 = [
+    {
+      image: `${import.meta.env.BASE_URL}images/p1.jpg`,
+      quote: "Helps me feel calm and ready to go.",
+      name: "Max ‘Pain’ Griffin, UFC Fighter",
+      role: "The Lenny Podcast",
+    },
+    {
+      image: `${import.meta.env.BASE_URL}images/p2.jpg`,
+      quote: "I felt energized after trying it for the first time. I’m excited to keep using it.",
+      name: "Lenny Rachitsky, The Lenny Podcast",
+      role: "UFC Fighter",
+    },
+    {
+      image: `${import.meta.env.BASE_URL}images/p3.jpg`,
+      quote: "Didn’t expect a headset to help with my anxious thoughts, but it did.",
+      name: "Raisa Tolia, Content Creator",
+      role: "Mave Customer",
+    },
+    {
+      image: `${import.meta.env.BASE_URL}images/p4.jpg`,
+      quote: "More energy and focus than caffeine, without the jitters.",
+      name: "Michael Raspuzzi, Founder",
+      role: "Mave Customer",
+    },
+    {
+      image: `${import.meta.env.BASE_URL}images/p5.jpg`,
+      quote: "It has definitely improved my productivity",
+      name: "Rajan Dube, Product Designer",
+      role: "Mave Customer",
+    },
+  ];
+  const [activeIndex, setActiveIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((previousIndex) => (previousIndex + 1) % testimonials1.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <>
       <header className="header">
-        <div className="logo">mave</div>
+        <div className="logo">
+          <img
+            src={`${import.meta.env.BASE_URL}images/mave.png`}
+            alt="Mave"
+            className="mave-logo"
+          />
+        </div>
         <nav className="navbar">
-          <a href="/home">Home</a>
-          <a href="/science">The Science</a>
-          <a href="/mave">Is Mave for me?</a>
+          <a
+            href="/home"
+            className={window.location.pathname === "/home" ? "active" : ""}
+          >
+            Home
+          </a>
+
+          <a
+            href="/science"
+            className={window.location.pathname === "/science" ? "active" : ""}
+          >
+            The Science
+          </a>
+
+          <a
+            href="/mave"
+            className={window.location.pathname === "/mave" ? "active" : ""}
+          >
+            Is Mave for me?
+          </a>
         </nav>
-        <button className="order-btn">
-          Order now ↗
-        </button>
+
+        <button className="order-btn">Order now ↗</button>
       </header>
       <section className="hero" id="home">
         <div className="hero-top">
@@ -299,17 +387,24 @@ function App() {
           </div>
           <div className="hero-right">
             <p className="review-text">
-              “Helps me feel calm and ready to go.”
+              “{testimonials1[activeIndex].quote}”
             </p>
             <p className="review-name">
-              Max ‘Pain’ Griffin, UFC Fighter
+              {testimonials1[activeIndex].name}, {testimonials1[activeIndex].role}
             </p>
             <div className="profile-images">
-              <img src={`${import.meta.env.BASE_URL}images/p1.jpg`} alt="Customer 1" />
-              <img src={`${import.meta.env.BASE_URL}images/p2.jpg`} alt="Customer 2" />
-              <img src={`${import.meta.env.BASE_URL}images/p3.jpg`} alt="Customer 3" />
-              <img src={`${import.meta.env.BASE_URL}images/p4.jpg`} alt="Customer 4" />
-              <img src={`${import.meta.env.BASE_URL}images/p5.jpg`} alt="Customer 5" />
+              {testimonials1.map((person, index) => (
+                <button
+                  type="button"
+                  key={person.image}
+                  className={`profile-btn ${activeIndex === index ? "active" : ""
+                    }`}
+                  onClick={() => setActiveIndex(index)}
+                  aria-label={`Show ${person.name}'s testimonial1`}
+                >
+                  <img src={person.image} alt={person.name} />
+                </button>
+              ))}
             </div>
           </div>
         </div>
@@ -339,14 +434,41 @@ function App() {
         <div className="testimonial-slider">
           <div
             className="testimonial-track"
+
             style={{
-              transform: `translateX(-${currentIndex * (100 / 3)}%)`,
-              transition: "transform 0.5s ease-in-out"
+              transform: `translateX(-${currentIndex * (isMobile ? 100 : 100 / 3)
+                }%)`,
+              transition: "transform 0.5s ease-in-out",
             }}
+
           >
             {testimonials.map((user, index) => (
               <div className="testimonial-card" key={index}>
-                <img src={user.image} alt={user.name} />
+                <div className="testimonial-image-wrap">
+                  {user.video ? (
+                    <>
+                      <video
+                        className="testimonial-video"
+                        preload="metadata"
+                        playsInline
+                      >
+                        <source src={user.video} type="video/mp4" />
+                      </video>
+                      <button
+                        type="button"
+                        className="watch-video"
+                        onClick={() => {
+                          setActiveVideo(user.video);
+                          setVideoOpen(true);
+                        }}
+                      >
+                        ▶ Watch video
+                      </button>
+                    </>
+                  ) : (
+                    <img src={user.image} alt={user.name} />
+                  )}
+                </div>
                 <h3>{user.review}</h3>
                 <p>{user.name}</p>
                 <small>{user.role}</small>
@@ -356,12 +478,14 @@ function App() {
         </div>
         <div className="slider-buttons">
           <button
+            type="button"
             onClick={prevSlide}
             aria-label="Previous slide"
           >
             ←
           </button>
           <button
+            type="button"
             onClick={nextSlide}
             aria-label="Next slide"
           >
@@ -369,6 +493,36 @@ function App() {
           </button>
         </div>
       </section>
+      {videoOpen && (
+        <div
+          className="video-popup"
+          onClick={() => setVideoOpen(false)}
+        >
+          <div
+            className="video-popup-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              className="video-close"
+              onClick={() => setVideoOpen(false)}
+              aria-label="Close video"
+            >
+              ✕
+            </button>
+            <video
+              key={activeVideo}
+              controls
+              autoPlay
+              playsInline
+              preload="auto"
+            >
+              <source src={activeVideo} type="video/mp4" />
+              Aapka browser is video format ko support nahi karta.
+            </video>
+          </div>
+        </div>
+      )}
       <section className="brain-section">
         <h1>
           Modern life
@@ -396,16 +550,16 @@ function App() {
             <g
               fill="none"
               stroke="url(#lineColor)"
-              strokeWidth="12"
+              strokeWidth="8"
               strokeLinecap="butt"
               opacity="0.38"
             >
-              <path d="M0 30 H120 C190 30 190 110 260 110 H450" />
-              <path d="M0 30 H120 C190 30 190 210 260 210 H450" />
-              <path d="M0 110 H120 C190 110 190 30 260 30 H450" />
-              <path d="M0 110 H120 C190 110 190 210 260 210 H450" />
-              <path d="M0 210 H120 C190 210 190 30 260 30 H450" />
-              <path d="M0 210 H120 C190 210 190 110 260 110 H450" />
+              <path d="M0 30 H120 C195 30 195 110 270 110 H450" />
+              <path d="M0 30 H120 C195 30 195 190 270 190 H450" />
+              <path d="M0 110 H120 C195 110 195 30 270 30 H450" />
+              <path d="M0 110 H120 C195 110 195 190 270 190 H450" />
+              <path d="M0 190 H120 C195 190 195 30 270 30 H450" />
+              <path d="M0 190 H120 C195 190 195 110 270 110 H450" />
             </g>
           </svg>
           <div className="right-labels">
@@ -476,7 +630,6 @@ function App() {
               src="/images/b2.png"
               alt="Woman wearing Mave headset"
             />
-
             <div className="photo-labels">
               <span>Ergonomic design</span>
               <span>Adjustable strap</span>
@@ -704,7 +857,7 @@ function App() {
       <section className="faq-section">
         <div className="faq-container">
           <div className="faq-left">
-            <h2>Frequently Asked<br />Questions</h2>
+            <h2>Frequently Asked Questions</h2>
             <p>
               Have a question you want answered?{" "}
               <a href="https://www.mavehealth.com/#">
@@ -936,7 +1089,7 @@ function App() {
               ☏ +91-7597 394 088
             </a>
             <img
-              src="/images/f.jpg"
+              src="/images/f1.png"
               alt="Brain cells"
             />
           </div>
