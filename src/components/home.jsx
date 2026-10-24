@@ -512,12 +512,13 @@ function App() {
             </button>
             <video
               key={activeVideo}
+              src={activeVideo}
               controls
               autoPlay
               playsInline
               preload="auto"
+              onError={() => console.log("Video load nahi hui:", activeVideo)}
             >
-              <source src={activeVideo} type="video/mp4" />
               Aapka browser is video format ko support nahi karta.
             </video>
           </div>
