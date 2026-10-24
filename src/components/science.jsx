@@ -26,15 +26,34 @@ function Science() {
     return (
         <main className="science-page">
             <header className="header">
-                <div className="logo">mave</div>
+                <div className="logo">
+                    <img
+                        src={`${import.meta.env.BASE_URL}images/mave.png`}
+                        alt="Mave"
+                        className="mave-logo"
+                    />
+                </div>
                 <nav className="navbar">
-                    <a href="/home">Home</a>
-                    <a href="/science">The Science</a>
-                    <a href="/mave">Is Mave for me?</a>
+                    <a
+                        href="/home"
+                        className={window.location.pathname === "/home" ? "active" : ""}
+                    >
+                        Home
+                    </a>
+                    <a
+                        href="/science"
+                        className={window.location.pathname === "/science" ? "active" : ""}
+                    >
+                        The Science
+                    </a>
+                    <a
+                        href="/mave"
+                        className={window.location.pathname === "/mave" ? "active" : ""}
+                    >
+                        Is Mave for me?
+                    </a>
                 </nav>
-                <button className="order-btn">
-                    Order now ↗
-                </button>
+                <button className="order-btn">Order now ↗</button>
             </header>
             <section className="science-intro">
                 <aside className="science-sidebar">
@@ -227,13 +246,10 @@ function Science() {
                         on mood, focus, motivation, stress regulation, sleep, and HRV.
                     </p>
                     <p className="science-solution-text">
-                        Each session lasts about 20 minutes and works in the background.
-                        Repeated sessions are intended to influence neural networks and
-                        support self-regulation over time.
+                        Each session lasts about 20 minutes and works in the background, subtly modulating neural networks without conscious effort. Repeated sessions reinforce the prefrontal cortex, improving the brain's capacity for self-regulation and executive control over time.
                     </p>
                     <p className="science-solution-text">
-                        tDCS has been studied extensively. Its effects and safety depend
-                        on the protocol and individual circumstances.
+                        tDCS has been studied extensively: over 10,000 published studies worldwide over the past 25 years. Its biggest advantage is a strong safety profile: no serious adverse effects, no tolerance buildup, and no risk of dependency.
                     </p>
                     <div className="science1-founder-quote">
                         <span className="science1-quote-mark">"</span>
@@ -401,7 +417,11 @@ function Science() {
                         <a href="tel:+917597394088">
                             ☏ +91-7597 394 088
                         </a>
-                        <img src="/images/f.jpg" alt="Brain cells" />
+                        <img
+                            src={`${import.meta.env.BASE_URL}images/f1.png`}
+                            alt="Brain cells"
+                            className="footer-brain-image"
+                        />
                     </div>
                 </div>
             </footer>
