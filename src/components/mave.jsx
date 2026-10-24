@@ -4,18 +4,37 @@ function Mave() {
     return (
         <>
             <header className="header">
-                <div className="logo">mave</div>
+                <div className="logo">
+                    <img
+                        src={`${import.meta.env.BASE_URL}images/mave.png`}
+                        alt="Mave"
+                        className="mave-logo"
+                    />
+                </div>
                 <nav className="navbar">
-                    <a href="/home">Home</a>
-                    <a href="/science">The Science</a>
-                    <a href="/mave">Is Mave for me?</a>
+                    <a
+                        href="/home"
+                        className={window.location.pathname === "/home" ? "active" : ""}
+                    >
+                        Home
+                    </a>
+                    <a
+                        href="/science"
+                        className={window.location.pathname === "/science" ? "active" : ""}
+                    >
+                        The Science
+                    </a>
+                    <a
+                        href="/mave"
+                        className={window.location.pathname === "/mave" ? "active" : ""}
+                    >
+                        Is Mave for me?
+                    </a>
                 </nav>
-                <button className="order-btn">
-                    Order now ↗
-                </button>
+                <button className="order-btn">Order now ↗</button>
             </header>
             <section className="mave9-hero">
-              <h2>YOUR HEALTH, YOUR WAY</h2>
+                <h2>YOUR HEALTH, YOUR WAY</h2>
                 <h1>Unlock your detailed Brain Score</h1>
                 <p className="mave9-description">
                     Focus & Attention |
@@ -28,7 +47,7 @@ function Mave() {
                 </p>
                 <div className="mave9-image">
                     <img
-                        src="/images/ph2.png"
+                        src={`${import.meta.env.BASE_URL}images/ph2.png`}
                         alt="Mave mobile app"
                     />
                 </div>
